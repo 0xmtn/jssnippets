@@ -1,0 +1,2 @@
+# jssnippets
+JS Snippets repository
