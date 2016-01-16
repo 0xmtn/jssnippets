@@ -30,11 +30,15 @@ function create_perm_bitmask(req_perms){
   return nMask;
 }
 
-//Suppose that in order to get list of followers of a user along with user's personal info,  and likes, the required permission scope consists: 
+//Suppose that in order to get list of followers of a user along with user's personal info,  
+//and likes, the required permission scope consists: 
 //basic, follower_list and likes
 //Instead of checking if one has it by string comparison:
 
-var users_permissions = create_perm_bitmask({BASIC: true, FOLLOWERLIST: true, LIKES: true, RELATIONSHIPS:true});
+var users_permissions = create_perm_bitmask({BASIC: true, 
+                                             FOLLOWERLIST: true, 
+                                             LIKES: true, 
+                                             RELATIONSHIPS:true});
 console.log(required_perm_scope); // 53
 ```
 
